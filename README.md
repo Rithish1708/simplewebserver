@@ -1,7 +1,7 @@
 # EX01 Developing a Simple Webserver
 ## Date:27.3.2025
-## name:Sathish kumar.T
-## reg no:212224100053
+## Name:Sathish kumar.T
+## Reg no:212224100053
 
 ## AIM:
 To develop a simple webserver to serve html pages and display the list of protocols in TCP/IP Protocol Suite.
