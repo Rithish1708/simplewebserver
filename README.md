@@ -39,33 +39,57 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 ```
 from http.server import HTTPServer,BaseHTTPRequestHandler
 
-content='''
+content='''<!doctype html>
 <html>
-    <body style="background-color: #f0f8ff; font-family: Arial, sans-serif;">
-        <h1 align="center" style="color: #2c3e50;">About the System</h1>
-        <table border="1" cellpadding="5" align="center" style="border-collapse: collapse; background-color: #ffffff;">
-            <tr style="background-color: #2980b9; color: white;">
-                <th>SYSTEM CONFIGURATION</th>
-                <th>DESCRIPTION</th>
-            </tr>
-            <tr>
-                <td style="background-color: #ecf0f1;">Processor</td>
-                <td>13th Gen Intel(R) Core(TM) i5-1335U   1.30 GHz</td>
-            </tr>
-            <tr>
-                <td style="background-color: #ecf0f1;">Primary Memory</td>
-                <td>Ram-16GB</td>
-            </tr>
-            <tr>
-                <td style="background-color: #ecf0f1;">Secondary Memory</td>
-                <td>Rom-512GB</td>
-            </tr>
-            <tr>
-                <td style="background-color: #ecf0f1;">O.S</td>
-                <td>Windows 11</td>
-            </tr>
-        </table>
-    </body>
+<head>
+<title> My Web Server</title>
+<style>
+    table,tr,td,th
+    {
+    
+    border:1px solid black;
+    border-collapse:collapse;
+    padding:10px;
+    text-align:center;
+    }
+    </style>
+</head>
+<body>
+<center><h1 style="font-family: cursive;"><u>TCP/IP PROTOCOLS</u></h1><br>
+</center>
+<table>
+<tr>
+<th>S.NO</th>
+<th>LAYER</th>
+<th>PROTOCOLS</th>
+</tr>
+    
+<tr>
+<td>1.</td>
+<td>Application layer protocol</td>
+<td>HTTPS,FTP,DNS</td>
+</tr>
+    
+<tr>
+<td>2.</td>
+<td>Transport layer protocol</td>
+<td>TCP</td>
+    
+</tr>
+    
+<tr>
+<td>3.</td>
+<td>Internet layer protocol</td>
+<td>IP</td>
+</tr>
+    
+<tr>
+<td>4.</td>
+<td>Link layer protocol</td>
+<td>MAC</td>
+</tr>
+</table>
+</body>
 </html>
 
 '''
@@ -86,7 +110,8 @@ httpd.serve_forever()
 ```
 ## OUTPUT:
 
-![alt text](ss.png)
+![alt text](<simplewebserver/Screenshot (4).png>)
+![alt text](<simplewebserver/Screenshot (5).png>)
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.

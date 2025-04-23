@@ -1,26 +1,56 @@
 from http.server import HTTPServer,BaseHTTPRequestHandler
 
-content='''
-<!DOCTYPE html>
+content='''<!doctype html>
 <html>
-    <head>
-        <title>
-            TCP Protocal Suite
-        </title>
-    </head>
-    <body>
-        <h1 >List of Protocals</h1>
-        <ul>
-            <li>HTTP</li>
-            <li>FTP</li>
-            <li>SNMP</li>
-            <li>SMTP</li>
-            <li>Telnet</li>
-            <li>DNS</li>
-        </ul>
-        <h3><b>Name:</b>Rithish R</h3>
-        <h3><b>Register No:</b>212224040278</h3>
-    </body>
+<head>
+<title> My Web Server</title>
+<style>
+    table,tr,td,th
+    {
+    
+    border:1px solid black;
+    border-collapse:collapse;
+    padding:10px;
+    text-align:center;
+    }
+    </style>
+</head>
+<body>
+<center><h1 style="font-family: cursive;"><u>TCP/IP PROTOCOLS</u></h1><br>
+</center>
+<table>
+<tr>
+<th>S.NO</th>
+<th>LAYER</th>
+<th>PROTOCOLS</th>
+</tr>
+    
+<tr>
+<td>1.</td>
+<td>Application layer protocol</td>
+<td>HTTPS,FTP,DNS</td>
+</tr>
+    
+<tr>
+<td>2.</td>
+<td>Transport layer protocol</td>
+<td>TCP</td>
+    
+</tr>
+    
+<tr>
+<td>3.</td>
+<td>Internet layer protocol</td>
+<td>IP</td>
+</tr>
+    
+<tr>
+<td>4.</td>
+<td>Link layer protocol</td>
+<td>MAC</td>
+</tr>
+</table>
+</body>
 </html>
 '''
 
